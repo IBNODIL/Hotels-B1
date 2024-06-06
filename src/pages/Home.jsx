@@ -1,5 +1,6 @@
 import React from 'react'
 import Hotels from '../components/Hotels'
+import WouldYouChooseUs from '../components/WouldYouChooseUs'
 import FilterByLocation from '../components/FilterByLocation'
 import FilterByStar from '../components/FilterByStar'
 import { Box, Button } from '@mui/material'
@@ -13,7 +14,7 @@ const styleForFilterSection = {
   backdropFilter: 'blur(10px)',
   backgroundColor: 'rgba(0, 0, 0, 0.5)',
   padding: '20px 40px',
-  display:'flex',
+  display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between'
 }
@@ -30,10 +31,14 @@ function Home() {
 
         <FilterByStar />
 
-        <Button disableElevation color='warning' sx={{fontSize: 'large', height: '56px', padding: '0 35px'}} variant="contained">SEARCH</Button>
+        <Button disableElevation color='warning' sx={{ fontSize: 'large', height: '56px', padding: '0 35px' }} variant="contained">SEARCH</Button>
       </Box>
-      
-      <Hotels />
+
+      <div id='hotels'>
+        <Hotels />
+      </div>
+
+      <WouldYouChooseUs />
     </>
   )
 }

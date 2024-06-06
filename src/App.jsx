@@ -3,6 +3,7 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
+import Hotels from './components/Hotels.jsx';
 import NavBar from './components/NavBar.jsx'
 
 function App() {

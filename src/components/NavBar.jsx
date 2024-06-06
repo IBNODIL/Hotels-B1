@@ -52,7 +52,7 @@ function NavBar() {
             <img src="./logo.svg" alt="logo" style={{ height: 40 }} />
           </Box>
           <Button color="inherit" component={RouterLink} to="/" sx={{ color: 'black', textTransform: "Capitalize" }}>Home</Button>
-          <Button color="inherit" sx={{ color: 'black', textTransform: "Capitalize" }}>Hotel</Button>
+          <Button color="inherit" sx={{ color: 'black', textTransform: "Capitalize" }} onClick={() => { window.location.href = '/#hotels'; }} >Hotel</Button>
           <Button color="inherit" component={RouterLink} to="/about" sx={{ color: 'black', textTransform: "Capitalize" }}>About</Button>
           <Button color="inherit" sx={{ color: 'black', textTransform: "Capitalize" }}>Contact</Button>
 
@@ -121,7 +121,7 @@ function NavBar() {
                 </Box>
 
 
-                <Box sx={{display:'flex', justifyContent:'space-between', width: '100%'}}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                   <Button variant="outlined" sx={{ color: 'black', fontSize: '20px', fontWeight: '500', width: '220px', textTransform: 'capitalize' }} color="warning">
                     <Box sx={{ height: '30px', margin: '0px 5px' }}>
                       <img src="./gogle_logo.png" alt="" />
