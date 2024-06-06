@@ -3,6 +3,7 @@ import Hotels from '../components/Hotels'
 import WouldYouChooseUs from '../components/WouldYouChooseUs'
 import FilterByLocation from '../components/FilterByLocation'
 import FilterByStar from '../components/FilterByStar'
+import OurCustomersFeedback from '../components/OurCustomersFeedback'
 import { Box, Button } from '@mui/material'
 
 const styleForFilterSection = {
@@ -39,6 +40,8 @@ function Home() {
       </div>
 
       <WouldYouChooseUs />
+
+      <OurCustomersFeedback />
     </>
   )
 }
