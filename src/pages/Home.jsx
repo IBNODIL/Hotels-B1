@@ -32,6 +32,7 @@ function Home() {
 
         <Button disableElevation color='warning' sx={{fontSize: 'large', height: '56px', padding: '0 35px'}} variant="contained">SEARCH</Button>
       </Box>
+      
       <Hotels />
     </>
   )
