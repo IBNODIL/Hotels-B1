@@ -1,15 +1,19 @@
-import { Routes, Route } from 'react-router-dom';
-import Login from './pages/Login.jsx'
-import Register from './pages/Register.jsx'
-import About from './pages/About.jsx'
-import Home from './pages/Home.jsx'
-import Hotels from './components/Hotels.jsx';
-import NavBar from './components/NavBar.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import About from './pages/About';
+import Home from './pages/Home';
+import Hotels from './components/Hotels';
+import NavBar from './components/NavBar';
+import useShowNavBar from './hooks/useShowNavBar';
 
 function App() {
+  const showNavBar = useShowNavBar();
+
   return (
     <div>
-      <NavBar />
+      {showNavBar && <NavBar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -17,7 +21,7 @@ function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App
