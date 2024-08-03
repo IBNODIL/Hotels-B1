@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Hotels from '../components/Hotels'
 import WouldYouChooseUs from '../components/WouldYouChooseUs'
 import FilterByLocation from '../components/FilterByLocation'
@@ -6,6 +6,7 @@ import FilterByStar from '../components/FilterByStar'
 import OurCustomersFeedback from '../components/OurCustomersFeedback'
 import FooterOfHome from '../components/FooterOfHome'
 import { Box, Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 const styleForFilterSection = {
   margin: '-48px 100px 50px',
@@ -22,6 +23,19 @@ const styleForFilterSection = {
 }
 
 function Home() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const isLogin = localStorage.getItem('isLogin');
+    if (isLogin && isLogin === 'true') {
+      console.log('succesfuly')
+    } else if(isLogin === 'false'){
+      navigate('/login'); 
+    } else {
+      navigate('/register'); 
+    }
+  }, [navigate]);
+
   return (
     <>
       <Box sx={{ width: '100%', overflow: 'hidden' }}>

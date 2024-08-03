@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import About from './pages/About';
 import Home from './pages/Home';
-import Hotels from './components/Hotels';
 import NavBar from './components/NavBar';
 import useShowNavBar from './hooks/useShowNavBar';
 
