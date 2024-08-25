@@ -1,0 +1,52 @@
+{
+  "hotels": [
+    {
+      "id": "1",
+      "name": "Hotel Irina Shake",
+      "price": "$10000,00/Night",
+      "img_url": "https://example.com/hotel1.jpg",
+      "hero_img_url": "https://example.com/hotel1_hero.jpg",
+      "rate": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Hotel Novotel",
+      "price": "$9000,00/Night ",
+      "img_url": "https://example.com/hotel2.jpg",
+      "hero_img_url": "https://example.com/hotel2_hero.jpg",
+      "rate": 4.7
+    },
+    {
+      "id": "3",
+      "name": "Hotel New Road",
+      "price": "$10000,00/Night ",
+      "img_url": "https://example.com/hotel3.jpg",
+      "hero_img_url": "https://example.com/hotel3_hero.jpg",
+      "rate": 4.8
+    },
+    {
+      "id": "4",
+      "name": "Hotel Hard Rock",
+      "price": "$10000,00/Night ",
+      "img_url": "https://example.com/hotel3.jpg",
+      "hero_img_url": "https://example.com/hotel3_hero.jpg",
+      "rate": 4.8
+    },
+    {
+      "id": "5",
+      "name": "Hotel Plaza Manhattan",
+      "price": "$10000,00/Night ",
+      "img_url": "https://example.com/hotel3.jpg",
+      "hero_img_url": "https://example.com/hotel3_hero.jpg",
+      "rate": 4.8
+    },
+    {
+      "id": "6",
+      "name": "Hotel Irina Shrek",
+      "price": "$10000,00/Night ",
+      "img_url": "https://example.com/hotel3.jpg",
+      "hero_img_url": "https://example.com/hotel3_hero.jpg",
+      "rate": 4.8
+    }
+  ]
+}

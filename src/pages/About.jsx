@@ -1,4 +1,6 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
+import AboutHotels from '../components/AboutHotels'
+import { useNavigate } from 'react-router-dom';
 import { Box, Button } from '@mui/material'
 
 const styleForFilterSection = {
@@ -15,6 +17,19 @@ const styleForFilterSection = {
 }
 
 function About() {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    const isLogin = localStorage.getItem('isLogin');
+    if (isLogin === 'true') {
+      console.log('Successfully logged in');
+    } else if (isLogin === 'false') {
+      navigate('/login');
+    } else {
+      navigate('/register');
+    }
+  }, [navigate]);
+
   return (
     <>
       <Box sx={{ width: '100%', overflow: 'hidden' }}>
@@ -22,14 +37,14 @@ function About() {
       </Box>
 
       <Box sx={styleForFilterSection}>
-        
-        
+
+
 
         <Button disableElevation color='warning' sx={{ fontSize: 'large', height: '56px', padding: '0 35px' }} variant="contained">Submit</Button>
       </Box>
 
       <Box>
-
+        <AboutHotels />
       </Box>
     </>
   )

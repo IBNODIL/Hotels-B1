@@ -6,9 +6,13 @@ import About from './pages/About';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import useShowNavBar from './hooks/useShowNavBar';
+import { useSelector, useDispatch } from 'react-redux'
 
 function App() {
   const showNavBar = useShowNavBar();
+
+  const count = useSelector((state) => state.counter.count);
+  const dispatch = useDispatch();
 
   return (
     <div>
